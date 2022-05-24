@@ -32,7 +32,7 @@ function App() {
         <br />
         <input type="submit"></input>
       </form>
-      <div style={{ display: { visibility } }}>
+      <div style={{ display: visibility }}>
         <h2 >Results:</h2>
         <div>{results.map(e =>
           <p key={e.id}>{e.userInput}</p>
