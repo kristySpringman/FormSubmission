@@ -2,10 +2,16 @@
   "files": {
     "src/App.jsx": [
       {
+        "id": "d3b4e75a-49ff-4fb6-afa1-a6e80fa9b457",
+        "line": 55,
+        "version": 2622,
+        "index": 1444
+      },
+      {
         "id": "1442f39a-61e6-4266-a744-534de3067dff",
-        "line": 47,
-        "version": 2096,
-        "index": 1103
+        "line": 56,
+        "version": 2376,
+        "index": 1455
       }
     ]
   }

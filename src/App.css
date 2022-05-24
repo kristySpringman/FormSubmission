@@ -1,5 +1,92 @@
-main {
-  text-align: center;
-  vertical-align: center;
-  line-height: 100vh
+.main {
+  min-height: 100vh;
+  min-width: 400px;
+  padding: 2rem 0;
+  flex: 1;
+  color: white;
+  background-image: linear-gradient(#43cea2, #3311ee);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container{
+  width:40%
+}
+@media only screen and (max-width: 900px) { 
+  .container{
+    width: 70%;
+  }
+}
+.center{
+  text-align:center;
+}
+.label{
+  line-height: 1.5;
+  font-size: 1rem;
+}
+.form{
+  height: 100px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  border-radius:5px;
+  
+}
+textarea{
+  width:-webkit-fill-available;
+  padding: 10px;
+}
+.submit{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  min-width: 40px;
+  height: 30px;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  background-size: 120% auto;
+  background-image: linear-gradient(315deg, #43cea2 0%, #185a9d 75%);
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: .5rem;
+}
+.submit:hover {
+  background-position: right center;
+}
+.submit:active {
+  top: 2px;
+}
+.results {
+  margin-top:1rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.3);
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  word-wrap: break-word;
+}
+#resultTitle{
+  margin-left:1rem;
+  margin-bottom:5px;
+  margin-top: 1rem;
+  
+}
+ul{
+  margin: 0;
+  margin-bottom:1rem;
+  margin-right:1rem;
+}
+li{
+  font-size: .9rem;
+  line-height: 1.5;
 }

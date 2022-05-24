@@ -13,30 +13,36 @@ function App() {
     setIsVisible('block')
     let userInput = event.target[0].value;
     setResult(results = [...results, { userInput: userInput, id: results.length }]);
-    setUserInput(userInput = '');
+    setUserInput(event.target[0].value = "")
   }
 
   return (
-    <div>
-      <h1>Welcome!</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="userInput">What would you like to say?</label>
-        <br />
-        <input
-          type="text"
-          id="userInput"
-          name="userInput"
-          value={results.userInput}
-          required
-          onChange={event => setUserInput(event.target[0].value)}></input>
-        <br />
-        <input type="submit"></input>
-      </form>
-      <div style={{ display: visibility }}>
-        <h2 >Results:</h2>
-        <div>{results.map(e =>
-          <p key={e.id}>{e.userInput}</p>
-        )}
+    <div className="main">
+      <div className="container">
+        <h1 className="center">Welcome!</h1>
+        <form onSubmit={handleSubmit}>
+          <label className="label" htmlFor="userInput">
+            What would you like to say?
+          </label>
+          <textarea
+            rows="4" 
+            cols="50"
+            className="form"
+            type="text"
+            id="userInput"
+            name="userInput"
+            value={results.userInput}
+            required
+            onChange={event => setUserInput(event.target[0].value)} />
+          
+          <input className="submit" type="submit"></input>
+        </form>
+        <div className="results" style={{ display: visibility }}>
+          <h2 className="label" id="resultTitle">Results:</h2>
+          <div>
+            <ul>{results.map(e =>
+            <li key={e.id}>{e.userInput}</li>)}</ul>
+          </div>
         </div>
       </div>
     </div>
