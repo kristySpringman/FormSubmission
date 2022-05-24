@@ -11,4 +11,4 @@ This project allows a user to type in text, and every time they press the submit
 * React
 
 ## Features:
-* Every time the user clicks submit, their text (a string) is appended onto an array
+* Every time the user clicks submit, their text (a string) is appended onto an array.
